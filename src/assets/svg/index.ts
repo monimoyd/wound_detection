@@ -1,0 +1,16 @@
+export {default as BackArrow} from './back_arrow.svg';
+export {default as NotificationBell} from './NotificationBell.svg';
+export {default as NotificationBellWhite} from './NotificationBellWhite.svg';
+export {default as RotateCamera} from './RotateCamera.svg';
+export {default as Home} from './Home.svg';
+export {default as History} from './History.svg';
+export {default as Profile} from './Profile.svg';
+export {default as HomeActive} from './HomeActive.svg';
+export {default as HistoryActive} from './HistoryActive.svg';
+export {default as ProfileActive} from './ProfileActive.svg';
+export {default as SearchIcon} from './SearchIcon.svg';
+export {default as FilterIcon} from './FilterIcon.svg';
+export {default as ErrorIcon} from './ErrorIcon.svg';
+export {default as MeterHand} from './MeterHand.svg';
+export {default as MeterScale} from './MeterScale.svg';
+export {default as GalleryIcon} from './GalleryIcon.svg';
