@@ -77,3 +77,17 @@ To learn more about React Native, take a look at the following resources:
 - [Learn the Basics](https://reactnative.dev/docs/getting-started) - a **guided tour** of the React Native **basics**.
 - [Blog](https://reactnative.dev/blog) - read the latest official React Native **Blog** posts.
 - [`@facebook/react-native`](https://github.com/facebook/react-native) - the Open Source; GitHub **repository** for React Native.
+
+
+# Model deployment
+
+The trained model is deployed as a flask application. The steps involved are
+- Train the model offline using a pretrained mobilenet on wound images given
+- Convert the model in onnyx format
+- Install Flask on AWS
+- Copy the model to the flask installation
+- Copy model_deployment/app.py to flask installation
+- Start the flask application using
+  python app.py
+  
+
