@@ -1,6 +1,14 @@
 # InfectSafe Project
 
-This project is for helping doctors predict infections using wound images. Machine Learning model is trained offline using the wound images to predict infections. A React based mobile application is developed which doctors can use for the infection prediction. 
+This project is for helping doctors predict infections using wound images. Machine Learning model is trained offline using the wound images to predict infections. A React based mobile application is developed which doctors can use for the infection prediction.
+
+## Installing the mobile application
+
+Download the InfectSafe.apk file from the google drive:
+
+https://drive.google.com/file/d/1OPgHp2aIxtGqjrnsii4f9ykk-8AL7QQp/view?usp=sharing
+
+Install the InfectSafe.apk on android mobile device
 
 ## React Application 
 This is a new [**React Native**](https://reactnative.dev) project, bootstrapped using [`@react-native-community/cli`](https://github.com/react-native-community/cli).
