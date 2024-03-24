@@ -1,6 +1,6 @@
 # InfectSafe Project
 
-This project is for helping doctors predict infections using wound images. Machine Learning model is trained offline using the wound images to predict infections. A React based mobile application is developed which doctors can use for the infection prediction.
+This project is for helping doctors predict infections using wound images of patients. Machine Learning model is trained offline using the wound images to predict infections. A React based mobile application is developed which doctors and patients can use for the infection prediction.
 
 ## Installing the mobile application
 
