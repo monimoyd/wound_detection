@@ -65,18 +65,17 @@ export default function HomeComponent({onSelfAssessmentPress}: Props) {
     </View>
   );
 
-  const renderTipCard = () => (
+  const renderTipCard = item => (
     <TouchableOpacity style={styles.tipCardContainer} activeOpacity={0.7}>
       <Image
         source={require('../../../assets/images/TipBulb.png')}
         style={styles.tipCardImage}
         resizeMode="contain"
       />
-      <AppText style={styles.sectionTitle}>Open or closed Wound</AppText>
-      <AppText style={styles.tipsDescText}>
-        Contrary to popular belief, Lorem Ipsum is not simply random text. It
-        has roots in a piece of it over 2000 years old.... more
-      </AppText>
+      <View style={{flex: 1}}>
+        <AppText style={styles.sectionTitle}>{item.title}</AppText>
+        <AppText style={styles.tipsDescText}>{item.desc}</AppText>
+      </View>
     </TouchableOpacity>
   );
   return (
@@ -90,15 +89,31 @@ export default function HomeComponent({onSelfAssessmentPress}: Props) {
           <AppText style={styles.sectionTitle}>Wound care tips</AppText>
           <AppText style={styles.seeAllText}>See all</AppText>
         </View>
-        <View style={styles.tipsContainer}>
-          {renderTipCard()}
-          {renderTipCard()}
-          {renderTipCard()}
-          {renderTipCard()}
-          {renderTipCard()}
-          {renderTipCard()}
-        </View>
+        <View style={styles.tipsContainer}>{data.map(renderTipCard)}</View>
       </ScrollView>
     </View>
   );
 }
+
+const data = [
+  {
+    id: 1,
+    title: 'Inspect the Wound',
+    desc: 'Check the wound daily for signs of infection, such as redness, swelling, or pus3.',
+  },
+  {
+    id: 2,
+    title: 'Avoid Strain',
+    desc: 'Limit activities that may stress the wound area to prevent reopening the incision',
+  },
+  {
+    id: 3,
+    title: 'Keep the wound clean and dry',
+    desc: 'Avoid getting the wound wet. Clean around the wound with a soft cloth or gauze and sterile water.',
+  },
+  {
+    id: 4,
+    title: 'Hand Hygiene',
+    desc: 'Wash your hands thoroughly before and after touching the wound or changing the dressing2.',
+  },
+];

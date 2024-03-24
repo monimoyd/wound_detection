@@ -106,12 +106,14 @@ export const styles = StyleSheet.create({
   },
   tipCardContainer: {
     backgroundColor: '#F7F8F9',
-    width: '48%',
+    width: '100%',
     marginTop: moderateScale(15),
     borderRadius: moderateScale(10),
     padding: moderateScale(10),
     borderColor: '#E8ECF4',
     borderWidth: 1,
+    flexDirection: 'row',
+    alignItems: 'center',
   },
   tipsDescText: {
     color: colors.text2,
@@ -119,7 +121,7 @@ export const styles = StyleSheet.create({
     marginTop: moderateScale(5),
   },
   tipCardImage: {
-    width: '40%',
+    width: '20%',
     height: moderateVerticalScale(60),
   },
 });
